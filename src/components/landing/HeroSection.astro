@@ -1,0 +1,278 @@
+---
+// HeroSection Component - Sección principal del hero
+---
+
+<main class="relative z-10 flex flex-col lg:flex-row items-center justify-between px-8 lg:px-16 py-12 lg:py-20">
+	<div class="lg:w-1/2 space-y-8">
+		<h1 class="text-orange-500 text-5xl lg:text-7xl font-black italic tracking-tight">
+			SOFTWARE
+		</h1>
+		<h2 class="text-gray-800 text-4xl lg:text-6xl font-bold leading-tight">
+			Development<br/>Solutions
+		</h2>
+		<p class="text-gray-600 text-lg lg:text-xl max-w-lg leading-relaxed">
+			Somos una startup innovadora especializada en desarrollo de software personalizado.
+			Transformamos tus ideas en soluciones digitales potentes y escalables.
+		</p>
+
+		<div class="flex flex-wrap gap-6 pt-4">
+			<a
+				href="https://vacaciones.workforcenexus.com"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="button is-medium is-light is-rounded btn-vacaciones-hero group relative overflow-hidden font-bold transition-all duration-500 hover:scale-105"
+			>
+				<span class="btn-ripple"></span>
+				<span class="btn-shine"></span>
+				<span class="relative z-10 flex items-center gap-3">
+					<span class="icon-wrapper">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-600 group-hover:rotate-12 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+							<path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+						</svg>
+					</span>
+					VACACIONES
+				</span>
+			</a>
+			<a
+				href="https://nomina.workforcenexus.com"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="button is-medium is-rounded btn-nomina-hero group relative overflow-hidden font-bold transition-all duration-500 hover:scale-105"
+			>
+				<span class="btn-glow"></span>
+				<span class="btn-particles"></span>
+				<span class="relative z-10 flex items-center gap-3">
+					<span class="icon-wrapper">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:rotate-12 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+							<path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" />
+						</svg>
+					</span>
+					SISTEMA NÓMINA
+				</span>
+			</a>
+		</div>
+	</div>
+
+	<!-- Hero Image Area -->
+	<div class="lg:w-1/2 flex justify-center items-center mt-12 lg:mt-0 relative">
+		<div class="relative">
+			<!-- Main illustration placeholder -->
+			<div class="w-80 h-80 lg:w-[450px] lg:h-[450px] bg-gradient-to-br from-orange-300/50 to-orange-500/30 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20">
+				<div class="text-center space-y-4">
+					<div class="w-24 h-24 mx-auto bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-2xl">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+						</svg>
+					</div>
+					<p class="text-gray-700 font-semibold text-lg">Innovación Digital</p>
+				</div>
+			</div>
+
+			<!-- Floating cards -->
+			<div class="absolute -top-4 right-0 bg-white/90 backdrop-blur-md rounded-xl p-4 shadow-xl flex items-center gap-3 animate-pulse">
+				<div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+						<path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+					</svg>
+				</div>
+				<div>
+					<p class="text-orange-500 font-bold text-sm">Work Force Nexus</p>
+					<p class="text-gray-500 text-xs">Soluciones empresariales</p>
+				</div>
+			</div>
+
+			<div class="absolute -bottom-4 -left-4 bg-white/90 backdrop-blur-md rounded-xl p-4 shadow-xl flex items-center gap-3">
+				<div class="w-10 h-10 bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg flex items-center justify-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+						<path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+					</svg>
+				</div>
+				<div>
+					<p class="text-orange-500 font-bold text-sm">Tu Equipo</p>
+					<p class="text-gray-500 text-xs">Gestión integral de RRHH</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<style>
+	/* Botones del Hero Section */
+	.btn-vacaciones-hero {
+		background: linear-gradient(135deg, #ffffff 0%, #f0fdfa 50%, #ccfbf1 100%) !important;
+		border: 2px solid #14b8a6 !important;
+		color: #0f766e !important;
+		box-shadow:
+			0 4px 20px rgba(20, 184, 166, 0.25),
+			inset 0 1px 0 rgba(255, 255, 255, 0.5);
+		padding: 1.25rem 2rem !important;
+		border-radius: 9999px;
+	}
+
+	.btn-vacaciones-hero:hover {
+		background: linear-gradient(135deg, #ccfbf1 0%, #99f6e4 50%, #5eead4 100%) !important;
+		box-shadow:
+			0 10px 35px rgba(20, 184, 166, 0.4),
+			inset 0 1px 0 rgba(255, 255, 255, 0.5);
+	}
+
+	.btn-nomina-hero {
+		background: linear-gradient(135deg, #4b5563 0%, #374151 50%, #1f2937 100%) !important;
+		border: 2px solid #6b7280 !important;
+		color: #ffffff !important;
+		box-shadow:
+			0 4px 20px rgba(31, 41, 55, 0.35),
+			inset 0 1px 0 rgba(255, 255, 255, 0.1);
+		padding: 1.25rem 2rem !important;
+		border-radius: 9999px;
+	}
+
+	.btn-nomina-hero:hover {
+		background: linear-gradient(135deg, #374151 0%, #1f2937 50%, #111827 100%) !important;
+		box-shadow:
+			0 10px 35px rgba(17, 24, 39, 0.5),
+			inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	}
+
+	/* Efecto de brillo deslizante */
+	.btn-shine {
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+		transition: left 0.6s ease;
+	}
+
+	.btn-vacaciones-hero:hover .btn-shine {
+		left: 100%;
+	}
+
+	/* Efecto de resplandor */
+	.btn-glow {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 0;
+		height: 0;
+		background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+		transform: translate(-50%, -50%);
+		transition: width 0.5s ease, height 0.5s ease;
+		border-radius: 50%;
+	}
+
+	.btn-nomina-hero:hover .btn-glow {
+		width: 300px;
+		height: 300px;
+	}
+
+	/* Animación de ondas (ripple) */
+	.btn-ripple {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 0;
+		height: 0;
+		background: rgba(20, 184, 166, 0.2);
+		border-radius: 50%;
+		transform: translate(-50%, -50%);
+		animation: ripple 2s infinite;
+	}
+
+	@keyframes ripple {
+		0% {
+			width: 0;
+			height: 0;
+			opacity: 0.5;
+		}
+		100% {
+			width: 200px;
+			height: 200px;
+			opacity: 0;
+		}
+	}
+
+	/* Efecto de partículas flotantes */
+	.btn-particles {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		border-radius: inherit;
+	}
+
+	.btn-particles::before,
+	.btn-particles::after {
+		content: '';
+		position: absolute;
+		width: 4px;
+		height: 4px;
+		background: rgba(255, 255, 255, 0.6);
+		border-radius: 50%;
+		animation: float 3s infinite;
+	}
+
+	.btn-particles::before {
+		left: 20%;
+		animation-delay: 0s;
+	}
+
+	.btn-particles::after {
+		left: 70%;
+		animation-delay: 1.5s;
+	}
+
+	@keyframes float {
+		0%, 100% {
+			transform: translateY(100%) scale(0);
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;
+		}
+		100% {
+			transform: translateY(-100%) scale(1);
+			opacity: 0;
+		}
+	}
+
+	/* Wrapper del icono con animación */
+	.icon-wrapper {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 28px;
+		height: 28px;
+		background: rgba(255, 255, 255, 0.3);
+		border-radius: 8px;
+		transition: all 0.3s ease;
+	}
+
+	.btn-vacaciones-hero:hover .icon-wrapper {
+		background: rgba(20, 184, 166, 0.2);
+		transform: scale(1.1);
+	}
+
+	.btn-nomina-hero:hover .icon-wrapper {
+		background: rgba(255, 255, 255, 0.15);
+		transform: scale(1.1);
+	}
+
+	/* Animación de pulso suave en hover */
+	.btn-vacaciones-hero:hover,
+	.btn-nomina-hero:hover {
+		animation: pulse-soft 1s infinite;
+	}
+
+	@keyframes pulse-soft {
+		0%, 100% {
+			transform: scale(1.05);
+		}
+		50% {
+			transform: scale(1.08);
+		}
+	}
+</style>

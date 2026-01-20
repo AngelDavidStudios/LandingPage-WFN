@@ -1,0 +1,164 @@
+---
+// Header Component - Navegación principal
+---
+
+<header class="relative z-10 flex items-center justify-between px-8 lg:px-16 py-6">
+	<a href="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer">
+		<span class="text-orange-500 font-bold text-2xl">WORK FORCE</span>
+		<span class="text-gray-800 font-bold text-2xl">NEXUS</span>
+	</a>
+
+	<nav class="hidden md:flex items-center gap-6">
+		<a href="#servicios" class="nav-link group relative px-5 py-2.5 font-semibold transition-all duration-300">
+			<span class="relative z-10 flex items-center gap-2">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-all duration-300" viewBox="0 0 20 20" fill="currentColor">
+					<path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+				</svg>
+				Servicios
+			</span>
+		</a>
+		<a href="#nosotros" class="nav-link group relative px-5 py-2.5 font-semibold transition-all duration-300">
+			<span class="relative z-10 flex items-center gap-2">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-all duration-300" viewBox="0 0 20 20" fill="currentColor">
+					<path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+				</svg>
+				Nosotros
+			</span>
+		</a>
+		<a href="#contacto" class="nav-link group relative px-5 py-2.5 font-semibold transition-all duration-300">
+			<span class="relative z-10 flex items-center gap-2">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-all duration-300" viewBox="0 0 20 20" fill="currentColor">
+					<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+					<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+				</svg>
+				Contacto
+			</span>
+		</a>
+	</nav>
+
+	<div class="flex items-center gap-4">
+		<a
+			href="https://vacaciones.workforcenexus.com"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="button is-light is-rounded btn-vacaciones group relative overflow-hidden px-6 py-3 font-semibold transition-all duration-500"
+		>
+			<span class="btn-shine"></span>
+			<span class="relative z-10 flex items-center gap-2">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:animate-bounce" viewBox="0 0 20 20" fill="currentColor">
+					<path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+				</svg>
+				Vacaciones
+			</span>
+		</a>
+		<a
+			href="https://nomina.workforcenexus.com"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="button is-dark is-rounded btn-nomina group relative overflow-hidden px-6 py-3 font-semibold transition-all duration-500"
+		>
+			<span class="btn-glow"></span>
+			<span class="relative z-10 flex items-center gap-2">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:animate-pulse" viewBox="0 0 20 20" fill="currentColor">
+					<path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" />
+				</svg>
+				Sistema Nómina
+			</span>
+		</a>
+	</div>
+</header>
+
+<style>
+	/* Estilos de navegación */
+	.nav-link {
+		background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.9) 100%);
+		border-radius: 12px;
+		color: #1e293b;
+		box-shadow:
+			0 4px 15px rgba(0, 0, 0, 0.1),
+			0 2px 4px rgba(0, 0, 0, 0.05),
+			inset 0 1px 0 rgba(255, 255, 255, 0.8);
+		border: 1px solid rgba(255, 255, 255, 0.6);
+		backdrop-filter: blur(8px);
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.nav-link:hover {
+		background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+		color: #ffffff;
+		box-shadow:
+			0 8px 25px rgba(30, 41, 59, 0.35),
+			0 4px 10px rgba(0, 0, 0, 0.15);
+		transform: translateY(-2px);
+		border-color: #475569;
+	}
+
+	.nav-link svg {
+		color: #f97316;
+	}
+
+	.nav-link:hover svg {
+		color: #fb923c;
+		transform: rotate(15deg) scale(1.1);
+	}
+
+	/* Botones del Header */
+	.btn-vacaciones {
+		background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 50%, #99f6e4 100%) !important;
+		border: 2px solid #5eead4 !important;
+		color: #0f766e !important;
+		box-shadow: 0 4px 15px rgba(20, 184, 166, 0.2);
+		border-radius: 9999px;
+	}
+
+	.btn-vacaciones:hover {
+		background: linear-gradient(135deg, #ccfbf1 0%, #99f6e4 50%, #5eead4 100%) !important;
+		box-shadow: 0 8px 25px rgba(20, 184, 166, 0.35);
+		transform: translateY(-3px);
+	}
+
+	.btn-nomina {
+		background: linear-gradient(135deg, #374151 0%, #1f2937 50%, #111827 100%) !important;
+		border: 2px solid #4b5563 !important;
+		color: #f9fafb !important;
+		box-shadow: 0 4px 15px rgba(31, 41, 55, 0.3);
+		border-radius: 9999px;
+	}
+
+	.btn-nomina:hover {
+		background: linear-gradient(135deg, #1f2937 0%, #111827 50%, #030712 100%) !important;
+		box-shadow: 0 8px 25px rgba(17, 24, 39, 0.5);
+		transform: translateY(-3px);
+	}
+
+	.btn-shine {
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+		transition: left 0.6s ease;
+	}
+
+	.btn-vacaciones:hover .btn-shine {
+		left: 100%;
+	}
+
+	.btn-glow {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 0;
+		height: 0;
+		background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+		transform: translate(-50%, -50%);
+		transition: width 0.5s ease, height 0.5s ease;
+		border-radius: 50%;
+	}
+
+	.btn-nomina:hover .btn-glow {
+		width: 300px;
+		height: 300px;
+	}
+</style>
