@@ -1,210 +1,177 @@
 ---
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
 ---
 
-<div id="container">
-	<img id="background" src={background.src} alt="" fetchpriority="high" />
-	<main>
-		<section id="hero">
-			<a href="https://astro.build"
-				><img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" /></a
+<!-- Landing Page Work Force Nexus -->
+<div class="min-h-screen bg-gradient-to-br from-amber-50 via-orange-100 to-orange-400 relative overflow-hidden">
+	<!-- Background decorative elements -->
+	<div class="absolute top-0 right-0 w-3/4 h-full bg-gradient-to-bl from-orange-500 via-orange-400 to-transparent opacity-80 -skew-x-12 transform origin-top-right"></div>
+	<div class="absolute top-1/4 right-1/4 w-96 h-96 border border-white/30 rounded-full"></div>
+	<div class="absolute top-20 right-20 w-4 h-4 bg-white rounded-full shadow-lg"></div>
+	<div class="absolute top-1/2 left-1/2 w-6 h-6 bg-white rounded-full shadow-lg opacity-80"></div>
+	<div class="absolute bottom-1/3 left-1/3 w-8 h-8 bg-white rounded-full shadow-lg opacity-60"></div>
+
+	<!-- Dot patterns -->
+	<div class="absolute top-1/3 right-1/3 grid grid-cols-3 gap-1">
+		<div class="w-1.5 h-1.5 bg-orange-600 rounded-full opacity-50"></div>
+		<div class="w-1.5 h-1.5 bg-orange-600 rounded-full opacity-50"></div>
+		<div class="w-1.5 h-1.5 bg-orange-600 rounded-full opacity-50"></div>
+		<div class="w-1.5 h-1.5 bg-orange-600 rounded-full opacity-50"></div>
+		<div class="w-1.5 h-1.5 bg-orange-600 rounded-full opacity-50"></div>
+		<div class="w-1.5 h-1.5 bg-orange-600 rounded-full opacity-50"></div>
+	</div>
+
+	<!-- Header / Navigation -->
+	<header class="relative z-10 flex items-center justify-between px-8 lg:px-16 py-6">
+		<a href="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer">
+			<span class="text-orange-500 font-bold text-2xl">WORK FORCE</span>
+			<span class="text-gray-800 font-bold text-2xl">NEXUS</span>
+		</a>
+
+		<nav class="hidden md:flex items-center gap-10">
+			<a href="#servicios" class="text-gray-700 hover:text-orange-500 transition-colors font-medium">Servicios</a>
+			<a href="#nosotros" class="text-gray-700 hover:text-orange-500 transition-colors font-medium">Nosotros</a>
+			<a href="#contacto" class="text-gray-700 hover:text-orange-500 transition-colors font-medium">Contacto</a>
+		</nav>
+
+		<div class="flex items-center gap-4">
+			<a
+				href="https://vacaciones.workforcenexus.com"
+				class="bg-white/90 hover:bg-white text-gray-700 border border-gray-200 px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
 			>
-			<h1>
-				To get started, open the <code><pre>src/pages</pre></code> directory in your project.
+				Vacaciones
+			</a>
+			<a
+				href="https://nomina.workforcenexus.com"
+				class="bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+			>
+				Sistema Nómina
+			</a>
+		</div>
+	</header>
+
+	<!-- Hero Section -->
+	<main class="relative z-10 flex flex-col lg:flex-row items-center justify-between px-8 lg:px-16 py-12 lg:py-20">
+		<div class="lg:w-1/2 space-y-8">
+			<h1 class="text-orange-500 text-5xl lg:text-7xl font-black italic tracking-tight">
+				SOFTWARE
 			</h1>
-			<section id="links">
-				<a class="button" href="https://docs.astro.build">Read our docs</a>
-				<a href="https://astro.build/chat"
-					>Join our Discord <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"
-						><path
-							fill="currentColor"
-							d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53s5-12.74 11.43-12.74S54 46 53.89 53s-5.05 12.69-11.44 12.69Zm42.24 0C78.41 65.69 73.25 60 73.25 53s5-12.74 11.44-12.74S96.23 46 96.12 53s-5.04 12.69-11.43 12.69Z"
-						></path></svg
-					>
+			<h2 class="text-gray-800 text-4xl lg:text-6xl font-bold leading-tight">
+				Development<br/>Solutions
+			</h2>
+			<p class="text-gray-600 text-lg lg:text-xl max-w-lg leading-relaxed">
+				Somos una startup innovadora especializada en desarrollo de software personalizado.
+				Transformamos tus ideas en soluciones digitales potentes y escalables.
+			</p>
+
+			<div class="flex flex-wrap gap-4 pt-4">
+				<a
+					href="https://vacaciones.workforcenexus.com"
+					class="bg-white/90 hover:bg-white text-gray-700 border border-gray-200 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2"
+				>
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-orange-500" viewBox="0 0 20 20" fill="currentColor">
+						<path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+					</svg>
+					VACACIONES
 				</a>
-			</section>
-		</section>
+				<a
+					href="https://nomina.workforcenexus.com"
+					class="bg-gray-800 hover:bg-gray-900 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2"
+				>
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+						<path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" />
+					</svg>
+					SISTEMA NÓMINA
+				</a>
+			</div>
+		</div>
+
+		<!-- Hero Image Area -->
+		<div class="lg:w-1/2 flex justify-center items-center mt-12 lg:mt-0 relative">
+			<div class="relative">
+				<!-- Main illustration placeholder -->
+				<div class="w-80 h-80 lg:w-[450px] lg:h-[450px] bg-gradient-to-br from-orange-300/50 to-orange-500/30 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20">
+					<div class="text-center space-y-4">
+						<div class="w-24 h-24 mx-auto bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-2xl">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+							</svg>
+						</div>
+						<p class="text-gray-700 font-semibold text-lg">Innovación Digital</p>
+					</div>
+				</div>
+
+				<!-- Floating cards -->
+				<div class="absolute -top-4 right-0 bg-white/90 backdrop-blur-md rounded-xl p-4 shadow-xl flex items-center gap-3 animate-pulse">
+					<div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+							<path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+						</svg>
+					</div>
+					<div>
+						<p class="text-orange-500 font-bold text-sm">Work Force Nexus</p>
+						<p class="text-gray-500 text-xs">Soluciones empresariales</p>
+					</div>
+				</div>
+
+				<div class="absolute -bottom-4 -left-4 bg-white/90 backdrop-blur-md rounded-xl p-4 shadow-xl flex items-center gap-3">
+					<div class="w-10 h-10 bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg flex items-center justify-center">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+							<path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+						</svg>
+					</div>
+					<div>
+						<p class="text-orange-500 font-bold text-sm">Tu Equipo</p>
+						<p class="text-gray-500 text-xs">Gestión integral de RRHH</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 
-	<a href="https://astro.build/blog/astro-5/" id="news" class="box">
-		<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"
-			><path
-				d="M24.667 12c1.333 1.414 2 3.192 2 5.334 0 4.62-4.934 5.7-7.334 12C18.444 28.567 18 27.456 18 26c0-4.642 6.667-7.053 6.667-14Zm-5.334-5.333c1.6 1.65 2.4 3.43 2.4 5.333 0 6.602-8.06 7.59-6.4 17.334C13.111 27.787 12 25.564 12 22.666c0-4.434 7.333-8 7.333-16Zm-6-5.333C15.111 3.555 16 5.556 16 7.333c0 8.333-11.333 10.962-5.333 22-3.488-.774-6-4-6-8 0-8.667 8.666-10 8.666-20Z"
-				fill="#111827"></path></svg
-		>
-		<h2>What's New in Astro 5.0?</h2>
-		<p>
-			From content layers to server islands, click to learn more about the new features and
-			improvements in Astro 5.0
-		</p>
-	</a>
+	<!-- Features Section -->
+	<section class="relative z-10 px-8 lg:px-16 py-16">
+		<div class="grid md:grid-cols-3 gap-8">
+			<div class="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-white/50">
+				<div class="w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl flex items-center justify-center mb-6">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+					</svg>
+				</div>
+				<h3 class="text-xl font-bold text-gray-800 mb-3">Desarrollo a Medida</h3>
+				<p class="text-gray-600">Creamos software personalizado que se adapta perfectamente a las necesidades de tu negocio.</p>
+			</div>
+
+			<div class="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-white/50">
+				<div class="w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl flex items-center justify-center mb-6">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+					</svg>
+				</div>
+				<h3 class="text-xl font-bold text-gray-800 mb-3">Innovación Continua</h3>
+				<p class="text-gray-600">Utilizamos las últimas tecnologías para mantener tu negocio a la vanguardia digital.</p>
+			</div>
+
+			<div class="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-white/50">
+				<div class="w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl flex items-center justify-center mb-6">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+					</svg>
+				</div>
+				<h3 class="text-xl font-bold text-gray-800 mb-3">Soporte 24/7</h3>
+				<p class="text-gray-600">Nuestro equipo está siempre disponible para ayudarte cuando más lo necesites.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Bottom dot pattern -->
+	<div class="absolute bottom-20 left-1/4 grid grid-cols-4 gap-1.5">
+		<div class="w-2 h-2 bg-gray-400 rounded-full opacity-40"></div>
+		<div class="w-2 h-2 bg-gray-400 rounded-full opacity-40"></div>
+		<div class="w-2 h-2 bg-gray-400 rounded-full opacity-40"></div>
+		<div class="w-2 h-2 bg-gray-400 rounded-full opacity-40"></div>
+		<div class="w-2 h-2 bg-gray-400 rounded-full opacity-40"></div>
+		<div class="w-2 h-2 bg-gray-400 rounded-full opacity-40"></div>
+		<div class="w-2 h-2 bg-gray-400 rounded-full opacity-40"></div>
+		<div class="w-2 h-2 bg-gray-400 rounded-full opacity-40"></div>
+	</div>
 </div>
-
-<style>
-	#background {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		filter: blur(100px);
-	}
-
-	#container {
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-		height: 100%;
-	}
-
-	main {
-		height: 100%;
-		display: flex;
-		justify-content: center;
-	}
-
-	#hero {
-		display: flex;
-		align-items: start;
-		flex-direction: column;
-		justify-content: center;
-		padding: 16px;
-	}
-
-	h1 {
-		font-size: 22px;
-		margin-top: 0.25em;
-	}
-
-	#links {
-		display: flex;
-		gap: 16px;
-	}
-
-	#links a {
-		display: flex;
-		align-items: center;
-		padding: 10px 12px;
-		color: #111827;
-		text-decoration: none;
-		transition: color 0.2s;
-	}
-
-	#links a:hover {
-		color: rgb(78, 80, 86);
-	}
-
-	#links a svg {
-		height: 1em;
-		margin-left: 8px;
-	}
-
-	#links a.button {
-		color: white;
-		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
-		box-shadow:
-			inset 0 0 0 1px rgba(255, 255, 255, 0.12),
-			inset 0 -2px 0 rgba(0, 0, 0, 0.24);
-		border-radius: 10px;
-	}
-
-	#links a.button:hover {
-		color: rgb(230, 230, 230);
-		box-shadow: none;
-	}
-
-	pre {
-		font-family:
-			ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
-			monospace;
-		font-weight: normal;
-		background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-		margin: 0;
-	}
-
-	h2 {
-		margin: 0 0 1em;
-		font-weight: normal;
-		color: #111827;
-		font-size: 20px;
-	}
-
-	p {
-		color: #4b5563;
-		font-size: 16px;
-		line-height: 24px;
-		letter-spacing: -0.006em;
-		margin: 0;
-	}
-
-	code {
-		display: inline-block;
-		background:
-			linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
-			linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
-		border-radius: 8px;
-		border: 1px solid transparent;
-		padding: 6px 8px;
-	}
-
-	.box {
-		padding: 16px;
-		background: rgba(255, 255, 255, 1);
-		border-radius: 16px;
-		border: 1px solid white;
-	}
-
-	#news {
-		position: absolute;
-		bottom: 16px;
-		right: 16px;
-		max-width: 300px;
-		text-decoration: none;
-		transition: background 0.2s;
-		backdrop-filter: blur(50px);
-	}
-
-	#news:hover {
-		background: rgba(255, 255, 255, 0.55);
-	}
-
-	@media screen and (max-height: 368px) {
-		#news {
-			display: none;
-		}
-	}
-
-	@media screen and (max-width: 768px) {
-		#container {
-			display: flex;
-			flex-direction: column;
-		}
-
-		#hero {
-			display: block;
-			padding-top: 10%;
-		}
-
-		#links {
-			flex-wrap: wrap;
-		}
-
-		#links a.button {
-			padding: 14px 18px;
-		}
-
-		#news {
-			right: 16px;
-			left: 16px;
-			bottom: 2.5rem;
-			max-width: 100%;
-		}
-
-		h1 {
-			line-height: 1.5;
-		}
-	}
-</style>
